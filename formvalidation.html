@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        function validate(){
+            var uname = document.getElementById("uname");
+            var pass = document.getElementById("pass");
+
+            if(uname.value.trim() ==""){
+                //alert("blank uname");
+                uname.style.border="solid 3px red";
+                document.getElementById("Ibluser").style.visibility="visible";
+                return false;
+            }
+            else if(pass.value == ""){
+                alert("Blank pass");
+                return false;
+            }
+            else if(pass.value.trim().length<5){
+                alert("Password is short");
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        </script>
+
+
+        </head>
+        <body>
+            <!--if return true then redirect otherwise no-->
+            <form onsubmit="return validate()" action="message.html">
+                    <input type = "text" id ="uname" placeholder="user name">
+                    <label id ="Ibluser" style="color: red; visibility: hidden;">invalid</label>
+                    <br>
+                    <input type="password" id ="pass" placeholder="password">
+                    <br>
+                    <button type="submit">Submit</button>
+                    
+                </form>
+            </body>
+
+    </html>

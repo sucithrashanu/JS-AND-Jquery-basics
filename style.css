@@ -1,0 +1,32 @@
+#heading1{
+    color:red;
+}
+.divi{
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 10px;
+}
+div p{
+    color: rgb(86, 42, 156);
+}
+.mycube{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    opacity: 0.4;
+    position: absolute;
+    padding: 20px;
+    color: black;
+}
+#cube{
+    color: black;
+}
+.mydiv{
+    border: 2px solid grey;
+    margin: 5px;
+    padding: 10px;
+}
+.newdiv{
+    border-radius: 10px;
+    background-color: lightcoral;
+}

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        var width = 100;
+        var difference =2;
+        var intervalId = 0;
+        document.getElementById("img1").style.width=width;
+        function increase(){
+            clearInterval(intervalId);
+            setInterval(zoomIn, 10);
+
+        }
+        function zoomIn(){
+            if(width<200){
+                width = width+difference;
+                document.getElementById("img1").style.width=width;
+            }
+            else{
+                clearInterval(intervalId);
+            }
+        }
+        function decrease(){
+            clearInterval(intervalId);
+            setInterval(zoomOut, 10);
+    
+        }
+        function zoomOut(){
+            if(width>100){
+                width = width-difference;
+                document.getElementById("img1").style.width=width;
+            }
+            else{
+                clearInterval(intervalId);
+            }
+        }
+        </script>
+
+
+        </head>
+        <body>
+            
+            <img id= "img1" src="heart.png" 
+            onmouseover="increase()" onmouseout="decrease()" width="100"/>
+            
+            </body>
+
+    </html>

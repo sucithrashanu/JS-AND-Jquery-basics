@@ -1,0 +1,20 @@
+<html>
+        <head>
+            <title> Default HTML</title>
+            <script type="text/javascript">
+            function setNewImage(){
+                document.getElementById("img1").src="image.png"
+            }
+            function setOldImage(){
+                document.getElementById("img1").src="test.png"
+            }
+            </script>
+    
+    
+            </head>
+            <body>
+                <img id ="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="test.png" width="300"/>
+               
+                </body>
+    
+        </html>

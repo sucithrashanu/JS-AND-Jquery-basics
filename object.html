@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        //objects declaration in js
+        // 1st metohd
+        var Car = {
+         car_brand:"Tesla",
+         cars_model:"Model",
+         price:35000,
+
+         teslaAutoPilot : function () {
+            return "This car has auto pilot";
+        }
+}
+document.write(Car.car_brand + Car.cars_model + Car.price );
+
+        document.write("<br/>")
+        document.write(Car.teslaAutoPilot());
+
+        //2nd way construtor function
+        function Cars(cars_brand,cars_model,cars_price)
+        {
+            this.cars_brand = cars_brand;
+            this.cars_model = cars_model;
+            this.car_price = cars_price;
+
+            this.teslaAutoPilot = function(){
+                document.write("this car has auto pilot");
+            }
+        }
+        var c1 = new Cars("tesla", "model 3", 350000);
+        var c2 = new Cars("tesla", "model 2", 250000);
+        document.write("<br/>")
+        c1.teslaAutoPilot();
+        document.write("<br/>")
+        document.write(c1.car_price);
+
+        //you can define object in class so you can do anywhere
+        Car.fuelType = "Electric"; //added one more object in Car class
+        document.write("<br/>")
+        document.write(Car.fuelType);
+        delete Car.price; //price = undefined
+        document.write("<br/>")
+        document.write(Car.price);
+        </script>
+        
+
+        </head>
+        <body>
+            
+            </body>
+
+    </html>

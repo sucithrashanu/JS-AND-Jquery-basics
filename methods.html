@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        /* 1. setTimeout() - allow u to execute statement once after an interval
+        2. clearTimeout() - clear a timer
+        3. setinterval() - allow to execute statement REPEATEDLY after an interval
+        4. clearInterval() 
+        */
+       var ID = 0;
+       var seconds=0;
+        function printmsg(){
+          //document.getElementById("op").innerHTML = "seconds have passed";
+          document.getElementById("op").innerHTML = seconds+" seconds";
+          seconds++;
+          
+        }
+        function start(){
+            //giving the reference of printmsg
+            //this method return ID
+            //window.setTimeout(printmsg, 5000);
+            ID=window.setInterval(printmsg, 1000);
+        }
+        function stop(){
+            //clear timeout will stop the functionality of start using id
+            //window.clearTimeout(ID);
+            window.clearInterval(ID);
+        }
+        </script>
+
+
+        </head>
+        <body>
+            
+            <button onclick="start()" id="btnAdd">Start</button>
+                    <h2 id="op">Some Text </h2>
+            <button onclick="stop()" id="btnAdd">Stop</button>
+            </body>
+
+    </html>

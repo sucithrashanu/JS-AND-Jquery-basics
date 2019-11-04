@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        function fn1(){
+            var select = document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value);
+        }
+        </script>
+
+
+        </head>
+        <body>
+            <select id="selectbox">
+                <option value="audi">Audi</option>
+                <option value="farari">Farari</option>
+                <option value="bmw">BMW</option>
+
+            </select>
+            <br>
+            <button id = "btn1" onclick="fn1()">Click Me</button>
+            </body>
+
+    </html>

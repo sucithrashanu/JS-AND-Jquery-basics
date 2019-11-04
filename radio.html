@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        function fn1(){
+           var rd1 = document.getElementById("rd1");
+           var rd2 = document.getElementById("rd2");
+           if(rd1.checked==true)
+            alert("The car selected is :" +rd1.value);
+           else if(rd2.checked==true)
+            alert("The car selecte is :"+ rd2.value);
+           else
+            alert("No car selected");
+            
+           }
+
+        
+        </script>
+
+        </head>
+        <body>
+            <input id = "rd1" name= "grp1" type = "radio" value = "Audi">Audi</input>
+            <br>
+            <input id="rd2" name = "grp1" type ="radio" value ="Mahindra"> Mahindra</input>
+            <br>
+            <button id ="btn1" onclick="fn1()">Click Me</button>
+            </body>
+
+    </html>

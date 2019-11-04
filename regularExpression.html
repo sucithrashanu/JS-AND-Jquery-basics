@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        function validate(){
+            var uname = document.getElementById("uname").value;
+            //regex = new RegExp("E00","i");
+            var regx = /[sdp]imple/i; //first word can be s or d or p i refers to case insensitive, ^ to exclude
+            //mobile number validation /^[7-9]\d{9}$/
+            /* 1       2          3           4-optional
+            yourname)2(Domain).(extension)(.extesion)
+            ex - tpt21@xyz.co.in
+            tpt21@gmail.com
+            email validation  /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,8})(.{a-z}{2,8})?$/ */
+            //var regx = /[a-x]/00/; //from a to x
+            if(regx.test(uname)){
+                //alert("Valid user name");
+                document.getElementById("Ibluser").style.visibility="hidden";
+            }
+            else{
+                //alert("Invalid user name");
+                document.getElementById("Ibluser").style.visibility="visible";
+            }
+            }
+        
+        </script>
+
+
+        </head>
+        <body>
+            <!--if return true then redirect otherwise no-->
+            <form>
+                    <input type = "text" id ="uname" placeholder="user name">
+                    <label id ="Ibluser" style="color: red; visibility: hidden;">invalid</label>
+                    <br>
+                    
+                    <button onclick="validate()">Submit</button>
+                    
+                </form>
+            </body>
+
+    </html>

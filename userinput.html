@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        function fn1(){
+            var user = document.getElementById("text1").value;
+           // alert("value inside the text box :" +user);
+           var pass = document.getElementById("pass").value;
+           if(user == pass){
+               alert("success");
+           }
+           else{
+               alert("Does not match");
+           }
+        }
+        </script>
+
+
+        </head>
+        <body>
+            <input id ="text1" placeholder="user name">
+            <br>
+            <input type="password" id ="pass" placeholder="password">
+            <br>
+            <button id = "btn1" onclick="fn1()"> click me</button>
+            </body>
+
+    </html>

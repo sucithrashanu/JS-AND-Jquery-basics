@@ -1,0 +1,27 @@
+<html>
+        <head>
+            <title> Default HTML</title>
+            <script type="text/javascript">
+            function changeStyling(){
+                var element = document.getElementsByClassName("para");
+                
+                
+                for(var i =0;i<element.length;i++){
+                  element[i].style.backgroundColor="yellow";  
+                }
+            }
+            </script>
+    
+    
+            </head>
+            <body>
+                <p class="para"> This is Paragraph 1</p>
+                <p > This is Paragraph 2</p>
+                <p class="para"> This is Paragraph 3</p>
+                <p > This is Paragraph 4</p>
+                <p class="para"> This is Paragraph 5</p>
+
+            <button onclick="changeStyling()"> Click Me</button>
+            </body>
+    
+        </html>

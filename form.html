@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        function validate(){
+            var uname = document.getElementById("uname");
+            var pass = document.getElementById("pass");
+
+            if(uname.value.trim() =="" || pass.value == ""){
+                alert("fill all the details");
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        </script>
+
+
+        </head>
+        <body>
+            <!--if return true then redirect otherwise no-->
+            <form onsubmit="return validate()" action="message.html">
+                    <input type = "text" id ="uname" placeholder="user name">
+                    <br>
+                    <input type="pass" id ="pass" placeholder="password">
+                    <br>
+                    <button type="submit">Submit</button>
+                    
+                </form>
+            </body>
+
+    </html>

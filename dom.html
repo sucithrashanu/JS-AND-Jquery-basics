@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        //dom manipulations and getelementbyId
+        function buttonClick(){
+            //alert("Button Clicked");
+            //document is an object which represent the loaded info in the browser
+            var str = document.getElementById("heading2").innerHTML;
+            alert(str);
+            /*innerhtml is the predefined property of the tag/object 
+             it contains the text which tag holds*/
+             //changing the text of h2 tag
+            document.getElementById("heading2").innerHTML = "JavaScript Learnig";
+        }
+        </script>
+
+        </head>
+        <body>
+            <button onclick="buttonClick()">Click Me</button>
+            <h2 id="heading2"> Some Random Text</h2>
+            </body>
+
+    </html>

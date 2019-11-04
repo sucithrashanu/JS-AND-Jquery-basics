@@ -1,0 +1,59 @@
+<!-- conditional control statement - if-else, switch
+looping/iterative control statement//break - for, while, do-while
+continue -->
+<html>
+
+
+    <head>
+        <title> Default HTML</title>
+        <script type="text/javascript">
+        /* Q1. find number - odd, even
+            Q2. positive, negative or 0
+            Q3. positive and even 
+        */
+        
+        document.write("<h1> if- else condition" )
+            var x =2;
+            if(x%2 == 0){
+                document.write("<h3>number is even</h3>");
+            }
+            else{
+                document.write("<h3> number is odd</h3>")
+            }
+
+            if(x> 0){
+                document.write("<h3>number is positive</h3>");
+            }
+            else if(x<0){
+                document.write("<h3> number is negative</h3>")
+            }
+            else{
+                document.write("<h3> number is 0)</h3>")
+            }
+
+            if(x> 0){
+                
+                if(x%2 == 0){
+                    document.write("<h3>number is positive and even</h3>");
+                }
+                else{
+                    document.write("<h3>number is positive but it is odd</h3>");
+                }
+            }
+            
+            else{
+                document.write("<h3> number is -ve</h3>")
+            }
+
+            if(x> 0 && x%2 == 0) {
+                document.write("<h3>number is positive and even</h3>");
+            }
+        </script>
+       
+       
+        </head>
+        <body>
+            
+            </body>
+
+    </html>

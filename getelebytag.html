@@ -1,0 +1,30 @@
+<html>
+        <head>
+            <title> Default HTML</title>
+            <script type="text/javascript">
+            function changeStyling(){
+                var para = document.getElementsByTagName("p");
+                para[0].style.fontSize = 24; // chaging the font-size of 1st para
+                para[1].style.color = "red"; 
+                para[2].style.color = "blue"; 
+                para[3].style.backgroundColor = "yellow";
+                
+                for(var i =0;i<para.length;i++){
+                  para[i].style.backgroundColor="yellow";  
+                }
+            }
+            </script>
+    
+    
+            </head>
+            <body>
+                <p> This is Paragraph 1</p>
+                <p> This is Paragraph 2</p>
+                <p> This is Paragraph 3</p>
+                <p> This is Paragraph 4</p>
+                <p> This is Paragraph 5</p>
+
+            <button onclick="changeStyling()"> Click Me</button>
+            </body>
+    
+        </html>
