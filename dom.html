@@ -1,24 +1,38 @@
 <html>
     <head>
         <title> Default HTML</title>
-        <script type="text/javascript">
-        //dom manipulations and getelementbyId
-        function buttonClick(){
-            //alert("Button Clicked");
-            //document is an object which represent the loaded info in the browser
-            var str = document.getElementById("heading2").innerHTML;
-            alert(str);
-            /*innerhtml is the predefined property of the tag/object 
-             it contains the text which tag holds*/
-             //changing the text of h2 tag
-            document.getElementById("heading2").innerHTML = "JavaScript Learnig";
-        }
-        </script>
-
+        <link rel="stylesheet" href="../css/style.css">
+        <!--
+            text(),html(),attr(),css()
+        -->
+        
         </head>
         <body>
-            <button onclick="buttonClick()">Click Me</button>
-            <h2 id="heading2"> Some Random Text</h2>
+            <h2>JQuery DOM Manipulation</h2>
+            <button id="btn1">Text method</button>
+            <button id="btn2">HTML method</button>
+            <div id="div1" class="mydiv">
+                <p class="pclass" id="p1">This is JQuery dom <b>manipulation </b>inside para tag</p>
+                </div>
             </body>
+            <script src="../jquery/jquery.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("#btn1").click(function(){
+                       // alert($("#p1").text()); //working as gettter
+                       //working as setter
+                       $("#p1").text("Hello <b>Trupti<b>. this is text method");//shows html tags also as it is
+                       alert($('#div1').css("border"))
+                    });
 
+                    $("#btn2").click(function(){
+                    $("#p1").html("html<b> method<b>"); //shows html tags also
+                    alert($('#p1').attr("class")); //gives the attr name
+
+                    });
+                });
+                </script>
     </html>
+
+
+    

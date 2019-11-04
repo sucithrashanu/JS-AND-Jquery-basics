@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <!--
+            append() - insert content at the end of selected element.
+            prepend() - insert after the selected element
+            element
+            after()
+            before()
+        -->
+        
+        </head>
+        <body>
+            <h2>JQuery DOM Manipulation</h2>
+            <button id="btn1">Append</button>
+            <button id="btn2">After</button>
+            <button id="btn3">Prepend</button>
+            <button id="btn4">Before</button>
+            <br><br>
+            <button id="btn5">Remove</button>
+            <button id="btn6">Empty</button>
+
+            <div id="div1" class="mydiv">
+                <p class="pclass" id="p1">This is JQuery dom <b>manipulation </b>inside para tag</p>
+                </div>
+            </body>
+            <script src="../jquery/jquery.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("#btn1").click(function(){
+                       $("#div1").append("<p>Hello <b>Trupti<b>. this is append method</p>");//shows html tags also as it is
+                       
+                    });
+
+                    $("#btn2").click(function(){
+                    $("#div1").after("<p>Hello <b>Trupti<b>. this is after method</p>"); //shows html tags also
+                    });
+                    $("#btn3").click(function(){
+                    $("#div1").prepend("<p>Hello <b>Trupti<b>. this is prepend method</p>"); //shows html tags also
+                    });
+                    $("#btn4").click(function(){
+                    $("#div1").before("<p>Hello <b>Trupti<b>. this is before method</p>"); //shows html tags also
+                    });
+                    $("#btn5").click(function(){
+                    $("#div1").remove(); //shows html tags also
+                    });
+                    $("#btn6").click(function(){
+                    $("#div1").empty(); //shows html tags also
+                    });
+                });
+                </script>
+    </html>
+
+
+    

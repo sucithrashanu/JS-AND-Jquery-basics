@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript">
+        
+        
+        </script>
+
+
+        </head>
+        <body>
+            <h2 id="head1" class="c"> jquery selector</h2>
+            <p>This is first para </p>
+                <p>this is 2nd para </p>
+            <div id="firstdiv" class="divi">
+                <p>This is first para in 1st division</p>
+                <p>this is 2nd para in 1st div</p>
+                </div>
+            <div id="seconddiv" class="divi">
+                <p>This is first para in 2nd division</p>
+                <p>this is 2nd para in 1st div</p>
+            </div>
+            <div id="thirddiv" class="divi">
+                <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                    </ul>
+            </div>
+            <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                    </ul>
+
+            <button id="btn1">Click Me</button>
+            <button id="btn2">Double Click</button>
+            <button id="btn3">Mouse Enter</button>
+           
+            </body>
+            
+            <script src="../jquery/jquery.js"></script>
+            <script>
+                //instead of calling onclick in button
+               // $("button").click(fn1);
+
+                //document.ready will call after entire document is loaded
+                //so write everything inside this method related to jquery
+                $(document).ready(function(){
+                    //instead of calling onclick in button
+                     $("#btn1").click(fn1);
+                     $("#btn2").dblclick(fn1);
+                    // $("#btn3").mouseenter(fadeInn);
+                    // $("#btn3").mouseleave(fadeOutt);
+                     $("#btn3").hover(fadeInn,fadeOutt);
+                     function fn1(){
+                    //$("#firstdiv, #seconddiv").fadeToggle();
+                    $("div p").fadeToggle();
+                    //$("p:first").fadeToggle();
+                }
+                function fadeInn(){
+                    //$("#firstdiv, #seconddiv").fadeToggle();
+                    $("#thirddiv").fadeOut();
+                    //$("p:first").fadeToggle();
+                }
+                function fadeOutt(){
+                    //$("#firstdiv, #seconddiv").fadeToggle();
+                    $("#thirddiv").fadeIn();
+                    //$("p:first").fadeToggle();
+                }
+
+                })
+                // function fn1(){
+                //     //$("#firstdiv, #seconddiv").fadeToggle();
+                //     $("div p").fadeToggle();
+                //     //$("p:first").fadeToggle();
+                // }
+                </script>
+    </html>

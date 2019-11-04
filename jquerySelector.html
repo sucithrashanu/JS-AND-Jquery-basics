@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript">
+        
+        
+        </script>
+
+
+        </head>
+        <body>
+            <h2 id="heading1" class="c"> Setting up jquery</h2>
+            <h2 id="heading2" class="c"> Jquery</h2>
+            <h2 id="heading3" class="c"> Js</h2>
+            <button id="btn1" onclick="fn1()">Click Me</button>
+                
+            </body>
+            
+            <script src="../jquery/jquery.js"></script>
+            <script>
+                function fn1(){
+                    //document.getElementById("heading1") = $("#heading1") 
+                    //element selector
+                    $("h2").fadeToggle();
+                    //id selector
+                    $("#heading1").focus();
+                   //class selector
+                    $(".c").fadeToggle();
+                }
+                </script>
+    </html>

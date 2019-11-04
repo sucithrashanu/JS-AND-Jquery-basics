@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript">
+        
+        
+        </script>
+
+
+        </head>
+        <body>
+            <h2 id="head1" class="c"> jquery selector</h2>
+            <p>This is first para </p>
+                <p>this is 2nd para </p>
+            <div id="firstdiv" class="divi">
+                <p>This is first para in 1st division</p>
+                <p>this is 2nd para in 1st div</p>
+                </div>
+            <div id="seconddiv" class="divi">
+                <p>This is first para in 2nd division</p>
+                <p>this is 2nd para in 1st div</p>
+            </div>
+            <div id="thirddiv" class="divi">
+                <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                    </ul>
+            </div>
+            <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                    </ul>
+
+            <button id="btn1">Click Me</button>
+            <button id="btn2">Click</button>
+            <button id="btn3">Toggle</button>
+           
+            </body>
+            
+            <script src="../jquery/jquery.js"></script>
+            <script>
+                $(document).ready(function(){
+                 $("#btn1").click(function(){
+                     $("#firstdiv").hide();
+                 }); 
+                 
+                 $("#btn2").click(function(){
+                     $("#firstdiv").show();
+                 }); 
+
+                 $("#btn3").click(function(){
+                     $("#firstdiv").toggle();
+                 }); 
+                });
+                </script>
+    </html>

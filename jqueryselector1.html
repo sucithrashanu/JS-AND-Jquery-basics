@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> Default HTML</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript">
+        
+        
+        </script>
+
+
+        </head>
+        <body>
+            <h2 id="head1" class="c"> jquery selector</h2>
+            <div id="firstdiv" class="divi">
+                <p>This is first para in 1st division</p>
+                <p>this is 2nd para in 1st div</p>
+                </div>
+            <div id="seconddiv" class="divi">
+                <p>This is first para in 2nd division</p>
+                <p>this is 2nd para in 1st div</p>
+            </div>
+            <div id="thirddiv" class="divi">
+                <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                    </ul>
+            </div>
+
+            <button id="btn1" onclick="fn1()">Click Me</button>
+                
+            </body>
+            
+            <script src="../jquery/jquery.js"></script>
+            <script>
+                function fn1(){
+                    //$("#firstdiv, #seconddiv").fadeToggle();
+                    $("div p").fadeToggle();
+                    //$("p:first").fadeToggle();
+                }
+                </script>
+    </html>
